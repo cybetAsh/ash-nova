@@ -1,0 +1,11 @@
+<%- include('layout', { user: user, body: `
+  <h2>Hello, ${user.username}</h2>
+  <form method="POST" action="/topup">
+    <input type="text" name="gameid" placeholder="Enter Game ID" required><br>
+    <select name="payment" required>
+      <option value="EzCash">Ez Cash</option>
+      <option value="Bank">Bank Payment</option>
+    </select><br>
+    <button type="submit">Submit Top-Up</button>
+  </form>
+` }) %>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ASH STORE</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1><a href="/">ASH STORE</a></h1>
+    <% if (user) { %>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/logout">Logout</a>
+    <% } else { %>
+      <a href="/login">Login</a>
+      <a href="/register">Register</a>
+    <% } %>
+  </header>
+  <main><%- body %></main>
+  <footer>© 2025 ASH STORE</footer>
+</body>
+</html>
